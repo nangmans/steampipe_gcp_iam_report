@@ -30,8 +30,7 @@ Run all benchmarks:
 steampipe check all
 ```
 
-![image](https://raw.githubusercontent.com/turbot/steampipe-mod-gcp-thrifty/main/docs/gcp_iam_report_console_graphic.png)
-
+![image](https://raw.githubusercontent.com/nangmans/steampipe_gcp_iam_report/main/docs/gcp_iam_report_console_graphic.png)
 
 ## Current Thrifty Checks
 
