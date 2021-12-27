@@ -1,6 +1,6 @@
-mod "gcp_thrifty" {
+mod "gcp_iam_report" {
   # hub metadata
-  title         = "GCP Thrifty"
+  title         = "GCP IAM Report"
   description   = "Are you a Thrifty GCP developer? This Steampipe mod checks your GCP project(s) to check for unused and under utilized resources."
   color         = "#ea4335"
   documentation = file("./docs/index.md")

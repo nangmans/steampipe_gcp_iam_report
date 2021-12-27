@@ -1,6 +1,6 @@
-# GCP Thrifty
+# GCP IAM Report
 
-An GCP cost savings and waste checking tool.
+An GCP IAM best-practice compliances tool.
 
 ## Quick start
 
@@ -21,8 +21,8 @@ steampipe plugin install gcp
 
 Clone this repo and move into the directory:
 ```sh
-git clone https://github.com/turbot/steampipe-mod-gcp-thrifty.git
-cd steampipe-mod-gcp-thrifty
+git clone https://github.com/nangmans/steampipe_gcp_iam_report.git
+cd steampipe_gcp_iam_report
 ```
 
 Run all benchmarks:
@@ -30,12 +30,8 @@ Run all benchmarks:
 steampipe check all
 ```
 
-![image](https://raw.githubusercontent.com/turbot/steampipe-mod-gcp-thrifty/main/docs/gcp-thrifty-console-graphic.png)
+![image](https://raw.githubusercontent.com/turbot/steampipe-mod-gcp-thrifty/main/docs/gcp_iam_report_console_graphic.png)
 
-Your can also run a specific controls:
-```shell
-steampipe check control.compute_disk_unattached
-```
 
 ## Current Thrifty Checks
 
@@ -51,12 +47,6 @@ steampipe check control.compute_disk_unattached
 steampipe query "select resource_name from steampipe_control;"
 ```
 
-## Contributing
-
-Have an idea for a thrifty check but aren't sure how to get started?
-- **[Join our Slack community →](https://join.slack.com/t/steampipe/shared_invite/zt-oij778tv-lYyRTWOTMQYBVAbtPSWs3g)**
-- **[Mod developer guide →](https://steampipe.io/docs/using-steampipe/writing-controls)**
-
 **Prerequisites**:
 - [Steampipe installed](https://steampipe.io/downloads)
 - Steampipe GCP plugin installed (see above)
@@ -70,14 +60,7 @@ Click on the GitHub Fork Widget. (Don't forget to :star: the repo!)
 2. Type the clone command below inserting your GitHub username instead of `YOUR-USERNAME`:
 
 ```sh
-git clone git@github.com:YOUR-USERNAME/steampipe-mod-gcp-thrifty
-cd steampipe-mod-gcp-thrifty
+git clone git@github.com:YOUR-USERNAME/steampipe_gcp_iam_report.git
+cd ssteampipe_gcp_iam_report
 ```
 
-Thanks for getting involved! We would love to have you [join our Slack community](https://join.slack.com/t/steampipe/shared_invite/zt-oij778tv-lYyRTWOTMQYBVAbtPSWs3g) and hang out with other Mod developers.
-
-Please see the [contribution guidelines](https://github.com/turbot/steampipe/blob/main/CONTRIBUTING.md) and our [code of conduct](https://github.com/turbot/steampipe/blob/main/CODE_OF_CONDUCT.md). All contributions are subject to the [Apache 2.0 open source license](https://github.com/turbot/steampipe-mod-gcp-thrifty/blob/main/LICENSE).
-
-`help wanted` issues:
-- [Steampipe](https://github.com/turbot/steampipe/labels/help%20wanted)
-- [GCP Thrifty Mod](https://github.com/turbot/steampipe-mod-gcp-thrifty/labels/help%20wanted)
