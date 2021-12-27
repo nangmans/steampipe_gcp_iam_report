@@ -32,14 +32,15 @@ steampipe check all
 
 ![image](https://raw.githubusercontent.com/nangmans/steampipe_gcp_iam_report/main/docs/gcp_iam_report_console_graphic.png)
 
-## Current Thrifty Checks
+## Current GCP IAM Report Checks
 
-- Unused, underused and oversized **Compute Instances**
-- Unused, underused and oversized **Compute Disks** and **Snapshots**
-- Unattached **Compute External IPs**
-- Stale **BigQuery Tables**
-- **Storage Buckets** without lifecycle policies
-- [#TODO List](https://github.com/turbot/steampipe-mod-gcp-thrifty/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
+- Do not grant basic roles unless there is no alternative.
+- The best way to mitigate these threats is to avoid user-managed service account keys
+- Ensure user-managed/external keys for service accounts are rotated every 90 days or less
+- Use logs from Cloud Audit Logs to regularly audit changes to your IAM policy
+- Manage access to logs using Logging roles.
+- Grant roles to a Google group instead of individual users when possible
+- Avoid using groups for granting service accounts access to resources
 
 **Use introspection to view the available controls:**:
 ```
