@@ -1,9 +1,9 @@
-## Overview
+## GCP IAM Report Overview
 
-The Thrifty GCP Benchmark provides prescriptive checks for discovery of unused, unmanaged, under-utilized and outdated GCP resources. Specific GCP services in scope include:
+The GCP IAM Report Benchmark provides prescriptive checks for discovery of GCP best-practice configuration compliances.
 
-* GCP BigQuery
-* GCP Compute
+* GCP Service account
+* GCP Service account keys
 * GCP Logging
-* GCP SQL
-* GCP Storage
+* GCP Audig logs
+* GCP Roles
